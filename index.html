@@ -72,21 +72,17 @@
               </nav>
             </v-col>
             
-            <!-- Contact Section (Right Side) -->
             <v-col cols="12" md="4" data-aos="fade-up" class="text-right">
               <h3 v-if="contacts && contacts.email">{{contacts.email}}</h3>
               <h3 v-if="contacts && contacts.mobileNo">{{contacts.mobileNo}}</h3>
               <h3 v-if="contacts && contacts.phoneNo">{{contacts.phoneNo}}</h3>
               
-              <!-- Social Links Buttons -->
               <v-btn class="ma-1" v-for="(link, index) in contactLinks" outlined="outlined" rounded="rounded" target="_blank" :href="link.link" :key="index" color="primary">
                 {{link.name}}
               </v-btn>
             
-              <!-- Certified Kubernetes Administrator Text -->
               <h4 class="primary--text mt-4">Certified Kubernetes Administrator</h4>
               
-              <!-- Certification Button -->
               <v-btn class="ma-1" outlined="outlined" rounded="rounded" color="success" target="_blank" href="https://www.credly.com/badges/606514ae-9699-4c2d-9aeb-de02336c429f/linked_in_profile">
                 View Certification
               </v-btn>
